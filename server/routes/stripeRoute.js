@@ -37,8 +37,8 @@ router.post('/create-checkout-session', async (req, res) => {
             metadata: { productDetails: productDetailsSerialized },
             mode: 'payment',
             billing_address_collection: 'required',
-            success_url: `http://localhost:5173/success`,
-            cancel_url: `http://localhost:5173/cancel`,
+            success_url: `${process.env.FRONTEND_URL}/success`,
+            cancel_url: `${process.env.FRONTEND_URL}/cancel`,
         });
 
         res.json({ id: session.id });
