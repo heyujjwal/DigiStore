@@ -37,7 +37,7 @@ const Register = () => {
                 }
             };
 
-            await axios.post(`${import.meta.env.VITE_APP_BACKEND_URI}/auth/register`, {
+            await axios.post(`https://digi-store-eo1b.onrender.com/auth/register`, {
                 name: userData.name,
                 email: userData.email,
                 password: userData.password

@@ -10,7 +10,7 @@ const Footer = () => {
     const handleSubscribe = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URI}/subscriber`, { email });
+          const response = await axios.post(`https://digi-store-eo1b.onrender.com/subscriber`, { email });
           enqueueSnackbar(`Subscription successful: ${response.data.email}`, { variant: 'success' });
           setEmail('');
         } catch (error) {

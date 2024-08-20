@@ -52,7 +52,7 @@ const CreateProduct = () => {
         data.append('file', img);
     
         try {
-            const uploadUrl = (`${import.meta.env.VITE_APP_BACKEND_URI}/upload-image`);
+            const uploadUrl = (`https://digi-store-eo1b.onrender.com/upload-image`);
             const res = await axios.post(uploadUrl, data);
     
             const { secure_url } = res.data;
@@ -93,7 +93,7 @@ const CreateProduct = () => {
                 category
             };
     
-            await axios.post(`${import.meta.env.VITE_APP_BACKEND_URI}/product`, formData,config);
+            await axios.post(`https://digi-store-eo1b.onrender.com/product`, formData,config);
     
             enqueueSnackbar('Product saved successfully', { variant: 'success' });
             navigate('/admin');
