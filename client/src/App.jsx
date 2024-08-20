@@ -4,7 +4,7 @@ import ProtectedRoute from "./components/ProtectedRoutes";
 import Admin from "./pages/Admin";
 import DeleteProduct from "./pages/DeleteProduct";
 import EditProduct from "./pages/EditProduct";
-import CreateProduct from "./pages/createProduct";
+import CreateProduct from './pages/CreateProduct';
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
