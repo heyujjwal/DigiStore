@@ -37,8 +37,8 @@ router.post('/create-checkout-session', async (req, res) => {
             metadata: { productDetails: productDetailsSerialized },
             mode: 'payment',
             billing_address_collection: 'required',
-            success_url: 'https://digi-store-pvnn.onrender.com/success',
-            cancel_url: 'https://digi-store-pvnn.onrender.com/cancel',
+            success_url: 'https://digi-store-pvnn.onrender.com',
+            cancel_url: 'https://digi-store-pvnn.onrender.com',
         });
 
         res.json({ id: session.id });

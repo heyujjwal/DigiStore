@@ -26,7 +26,7 @@ const Navbar = () => {
           
         </ul>
       </div>
-      <div className="navbar-end gap-12">
+      <div className="navbar-end gap-5">
       <Link to="/admin" className="text-lg btn hover:text-black bg-base-100 hover:bg-gray-400 py-2 ">Admin</Link>
           <Link to="/cart"><CartIcon/></Link>
           <ThemeToggle/>
