@@ -10,7 +10,7 @@ const Shop = () => {
 
   useEffect(() => {
     axios
-        .get(`${import.meta.env.VITE_APP_BACKEND_URL}/product`)
+        .get(`https://digistore-server.onrender.com/product`)
         .then((response) => {
             setProduct(response.data.data);
             setFilteredProducts(response.data.data);

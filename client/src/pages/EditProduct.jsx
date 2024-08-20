@@ -28,7 +28,7 @@ const EditProduct = () => {
     useEffect(() => {
       setLoading(true);
       axios
-          .get(`${import.meta.env.VITE_APP_BACKEND_URL}/product/${id}`)
+          .get(`https://digistore-server.onrender.com/product/${id}`)
           .then((response) => {
               setName(response.data.name);
               setPrice(response.data.price);
@@ -47,7 +47,7 @@ const EditProduct = () => {
     const data = { name, price,description, category };
     setLoading(true);
     axios
-        .put(`${import.meta.env.VITE_APP_BACKEND_URL}/product/${id}`, data, config)
+        .put(`https://digistore-server.onrender.com/product/${id}`, data, config)
         .then(() => {
             setLoading(false);
             enqueueSnackbar('Product edited successfully', {variant: 'success'});
