@@ -29,7 +29,7 @@ client/node_modules/
 server/node_modules/
 
 # Environment variables
-
+client/.env
 client/.env.local
 client/.env.*.local
 server/.env
