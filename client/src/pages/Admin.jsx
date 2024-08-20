@@ -14,7 +14,7 @@ const Admin = () => {
         setLoading(true);
     
         axios
-          .get(`https://digistore-server.onrender.com/product`)
+          .get(`${import.meta.env.VITE_APP_BACKEND_URL}/product`)
           .then((response) => {
             setProduct(response.data.data);
     

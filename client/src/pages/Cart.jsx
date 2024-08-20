@@ -34,7 +34,7 @@ const handleCheckout = async () => {
     }));
 
     try {
-            const response = await axios.post(`https://digistore-server.onrender.com/stripe/create-checkout-session`, {
+            const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URL}/stripe/create-checkout-session`, {
                 products: transformedItems
             });
             setLoading(false);

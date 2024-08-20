@@ -13,7 +13,7 @@ const Stats = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await fetch(`https://digistore-server.onrender.com/stripe/api/stats `);
+        const response = await fetch(`${import.meta.env.VITE_APP_BACKEND_URL}/stripe/api/stats `);
         
         if (!response.ok) {
           throw new Error('Network response was not ok');

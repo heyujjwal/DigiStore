@@ -21,7 +21,7 @@ const DeleteProduct = () => {
       setLoading(true);
 
       axios
-          .delete(`https://digistore-server.onrender.com/product/${id}`, config)
+          .delete(`${import.meta.env.VITE_APP_BACKEND_URL}/product/${id}`, config)
           .then(() => {
               setLoading(false);
               enqueueSnackbar('Product Deleted', { variant: 'success' });
