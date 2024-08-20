@@ -37,8 +37,8 @@ router.post('/create-checkout-session', async (req, res) => {
             metadata: { productDetails: productDetailsSerialized },
             mode: 'payment',
             billing_address_collection: 'required',
-            success_url: `https://digistore-01.vercel.app/success`,
-            cancel_url: `https://digistore-01.vercel.app/cancel`,
+            success_url: `https://digi-store-1.vercel.app/success`,
+            cancel_url: `https://digi-store-1.vercel.app/cancel`,
         });
 
         res.json({ id: session.id });
