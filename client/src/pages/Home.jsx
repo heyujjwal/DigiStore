@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 
 const Home = () => {
@@ -27,16 +28,16 @@ const latestproduct=product.slice(0,3)
           We have top-quality digital courses and templates to help you learn new skills and reach your goals. Our templates are easy to use and customizable.
 
           </p>
-          <a href="/shop" className="btn mt-4 bg-purple-700 border-1 border-purple-500 hover:bg-purple-400 hover:border-1 border-purple-700 text-xl text-white">
+          <Link to="/shop" className="btn mt-4 bg-purple-700 border-1 border-purple-500 hover:bg-purple-400 hover:border-1 border-purple-700 text-xl text-white">
               Shop
-          </a>
+          </Link>
         </div>
       </div>
       
     <ProductCard product={latestproduct} />
 
     <h1 className="text-xl mt-5 text-center">
-            To explore more store products.. go on to <a href="/shop" className='text-xl font-bold text-purple-900 underline'>Shop</a> 
+            To explore more store products.. go on to <Link to="/shop" className='text-xl font-bold text-purple-900 underline'>Shop</Link>
           </h1>
 
 
