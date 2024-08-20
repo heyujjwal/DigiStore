@@ -7,7 +7,7 @@ const Home = () => {
     const [product, setProduct] = useState([]);
     useEffect(() => {
         axios
-            .get(`${import.meta.env.VITE_APP_BACKEND_URL}/product`)
+            .get(`${import.meta.env.VITE_APP_BACKEND_URI}/product`)
             .then((response) => {
                 setProduct(response.data.data);
             })

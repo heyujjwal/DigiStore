@@ -25,7 +25,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(false)
-            const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URL}/auth/login`, loginData);
+            const response = await axios.post(`${import.meta.env.VITE_APP_BACKEND_URI}/auth/login`, loginData);
             console.log(response.data);
 
             localStorage.setItem('token', response.data.token);
